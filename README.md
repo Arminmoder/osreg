@@ -12,7 +12,7 @@
 ## راه‌اندازی
 1. پروژه را دانلود یا کلون کنید:
    ```bash
-   git clone https://github.com/Arminmoder/osreg/tree/main
+   git clone https://github.com/Arminmoder/osreg
    ```
 
 
