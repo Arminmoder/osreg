@@ -13,10 +13,11 @@ import time
 
 username = "YOUR USERNAME"
 password = "YOUR PASSWORD"
+url = "YOUR URL"
 # -----------------------------------------
 
 
-# Reload and alert when receiving alerts from the browser
+# Alert when receiving alerts from the browser
 def handle_alert_and_reload():
     try:
         alert = driver.switch_to.alert
@@ -63,7 +64,7 @@ wait = WebDriverWait(driver, 30)
 
 
 # Open main login page
-driver.get("https://osreg.pnu.ac.ir/forms/authenticateuser/main.htm")
+driver.get(url)
 print("[DEBUG] Main page loaded")
 print("[DEBUG] Current URL:", driver.current_url)
 print("[DEBUG] Page title:", driver.title)
@@ -182,3 +183,4 @@ winsound.Beep(700, 10000)
 driver.switch_to.default_content()
 time.sleep(60)  
 driver.quit()
+
